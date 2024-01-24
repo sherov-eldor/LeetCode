@@ -5,6 +5,7 @@
 
 var squareIsWhite = function (coordinates) {
   let letters = ["a", "b", "c", "d", "e", "f", "g", "h"];
+  console.log(letters.indexOf(coordinates[0]));
   return (letters.indexOf(coordinates[0]) + parseInt(coordinates[1])) % 2 == 0 
 };
 
