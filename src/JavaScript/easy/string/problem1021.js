@@ -3,8 +3,6 @@
  * @return {number}
  */
 
-// Firts solution
-
 var maxProduct = function (nums) {
   let max = 0;
   if (nums.length > 2) {
@@ -20,16 +18,6 @@ var maxProduct = function (nums) {
   }
   return max;
 };
-
-// Second solution
-
-var maxProduct = function (nums) {
-  let firstMaxNumber = Math.max(...nums)
-  let index = nums.indexOf(firstMaxNumber)
-  nums.splice(index, 1)
-  let secondMaxNumber = Math.max(...nums)
-  return (firstMaxNumber - 1) * (secondMaxNumber - 1)
-}
 
 // let nums = [3, 4, 5, 2];
 // let nums = [1,5,4,5]
