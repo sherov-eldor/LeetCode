@@ -24,7 +24,7 @@ var smallestEqual = function (nums) {
 var smallestEqual = function (nums) {
   for (let i = 0; i < nums.length; i++) {
     if (i % 10 == nums[i]) {
-      return 1;
+      return i;
     }
   }
   return -1;
